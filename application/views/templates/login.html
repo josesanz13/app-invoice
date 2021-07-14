@@ -1,0 +1,25 @@
+<div class="col-12 col-md-4 offset-md-4 my-4">
+	<div class="card shadow">
+		<div class="card-body my-3 mx-2">
+			<form name="validateLog" role="form" ng-submit="login($event)">
+				<div class="col-12 text-center">
+					<img src="assets/images/business.png" alt="" width="160">
+				</div>
+				<hr class="my-2">
+				<div class="mb-3">
+					<label class="form-label mb-0">
+						<span class="text-danger">*</span>User :
+					</label>
+					<input ng-model="form.user" type="text" class="form-control toUpper" name="user" placeholder="Username..." autofocus required>
+				</div>
+				<div class="mb-3">
+					<label class="form-label mb-0">
+						<span class="text-danger">*</span>Password :
+					</label>
+					<input ng-model="form.pass" type="password" class="form-control" name="pass" placeholder="Password..." required>
+				</div>
+				<input type="submit" value="Login" class="btn btn-primary col-12" ng-disabled="validateLog.$invalid">
+			</form>
+		</div>
+	</div>
+</div>
